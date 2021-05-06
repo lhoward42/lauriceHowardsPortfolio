@@ -1,0 +1,133 @@
+
+:root{
+    --main-font: Georgia, 'Times New Roman', Times, serif;
+
+}
+/* Navbar and Hero */
+.navbar{
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: space-around;
+    
+}
+a.nav-link{
+    padding: 0;
+}
+.navbar a:hover{
+    transform: scale(1.2);
+}
+.heroText{
+    margin-top: 4%;
+}
+#name{
+    font-family: var(--main-font);
+    font-size: 4em;
+}
+#career-title{
+    font-family: var(--main-font);
+    font-size: 2em;
+}
+#quote{ 
+    font-family: var(--main-font);
+    font-size: large;
+
+}
+.background-img{
+    background-image: url("./assets/jordan-whitt-D8M2oUAcZ-w-unsplash.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 47rem;
+}
+/* About Section */
+ /* .about-me{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+} */
+
+#aboutMeImg{
+    width: 60%;
+    height: 95%;
+    border-radius: 50%;
+    margin-top: 4%;    
+}
+
+/* .resumeLink{
+    margin-left: 27.5%;
+    margin-top: 3%;
+    padding: 1.3%;
+    width: 15%;
+    border: .1em solid rgba(187, 187, 14, 0.801);
+    background-color: white;
+} */
+
+/* .project-cards{
+    display: flex;
+    flex-direction: row;
+} */
+
+.card{
+    position: relative;
+    overflow: hidden;
+    /* margin: 30px; */
+    /* border-radius: 10px; */
+    box-shadow: 10% lightgray;
+    
+    
+}
+
+.card:before{ 
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 220%;
+    background: rgba(139, 134, 137, 0.7);
+    top: -100%;
+    right: -100%;
+    z-index: 1;
+    transform-origin: center top 0;
+    transition: .5s
+}
+
+.card:hover:before{
+    left: 0%;
+
+}
+
+.card img{
+    width: 100%;
+    height: 275px;  
+}
+
+.card-text{
+    width: 100%;
+    padding: 0 25px;
+    position: absolute;
+    top: -75%;
+    right: 10%;                         
+    color: #fff;
+    left: 5%;
+    z-index: 1;
+    transition: .75s;
+}
+.card-title h3{
+    z-index: 100;
+
+}
+
+.card:hover .card-text{
+    top: 80px;
+    
+    
+}
+/* Form Stuff */
+#fs-frm{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me{
+    padding: 0 25% 0 25%;
+}
