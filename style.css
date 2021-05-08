@@ -1,84 +1,124 @@
 
 :root{
     --main-font: Georgia, 'Times New Roman', Times, serif;
-
+    --primary-color: rgb(187, 187, 14);
+    --secondary-color: rgb(21, 13, 90);
+    --main-background-color: rgba(245, 245, 245, 0.9)
+}
+body{
+    font-family: var(--main-font);
+    background-color: var(--main-background-color)
 }
 /* Navbar and Hero */
 .navbar{
     font-family: var(--main-font);
     display: flex;
     justify-content: space-around;
-    
+    padding:0; 
+    width: fit-content
 }
-a.nav-link{
-    padding: 0;
+/* .navbar.navbar-expand-lg.navbar-dark.ms-auto{
+
+} */
+#nav-link{
+    color: rgb(187, 187, 14); 
+    font-size: larger;
+    
 }
 .navbar a:hover{
     transform: scale(1.2);
 }
-.heroText{
-    margin-top: 4%;
+
+#navbarToggler{
+    /* padding: 0%;  */
+    background-color: var(--main-background-color); 
+    -webkit-box-shadow: 0px 2px 8px 6px rgba(79,79,79,0.54); 
+    box-shadow: 0px 2px 8px 6px rgba(79,79,79,0.54); 
+    border: .2em solid rgba(187, 187, 14, 0.171);
+}
+#heroContainer{
+    margin-top: 7%;
+}
+#heroDisplay{
+    background-color: var(--main-background-color);  
+    height: 50%; 
+    margin: 15%; 
+    -webkit-box-shadow: 0px 2px 8px 6px rgba(79,79,79,0.54); 
+    box-shadow: 0px 2px 8px 6px rgba(79,79,79,0.54); 
+    border: .2em solid rgba(187, 187, 14, 0.171);
 }
 #name{
     font-family: var(--main-font);
     font-size: 4em;
+    color: var(--secondary-color);
 }
 #career-title{
     font-family: var(--main-font);
     font-size: 2em;
+    color: var(--primary-color);
 }
 #quote{ 
     font-family: var(--main-font);
     font-size: large;
-
+    color: var(--secondary-color);
 }
 .background-img{
     background-image: url("./assets/jordan-whitt-D8M2oUAcZ-w-unsplash.jpg");
+    background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     height: 47rem;
+    -webkit-box-shadow: 0px 13px 14px -10px rgba(79,79,79,0.3); 
+    box-shadow: 0px 13px 14px -10px rgba(79,79,79,0.3);
 }
-/* About Section */
- /* .about-me{
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 
-} */
-
+h1{
+    color: var(--secondary-color)
+}
+#about-me{
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(79,79,79,0.5); 
+    box-shadow: 0px 0px 26px -2px rgba(79,79,79,0.3);
+}
 #aboutMeImg{
-    width: 60%;
-    height: 95%;
+    width: 80%;
+    height: 100%;
     border-radius: 50%;
-    margin-top: 4%;    
+    -webkit-box-shadow: 0px 0px 21px -2px rgba(79,79,79,0.55); 
+    box-shadow: 0px 0px 21px -2px rgba(79,79,79,0.55);
+    /* margin-top: 4%; */
+}
+#skills{
+    color: var(--secondary-color);
+}
+#resume{
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: large;
+    -webkit-box-shadow: 0px 0px 21px -2px rgba(79,79,79,0.55); 
+    box-shadow: 0px 0px 21px -2px rgba(79,79,79,0.55);
+}
+#resume:hover{
+    background-color: var(--primary-color);
 }
 
-/* .resumeLink{
-    margin-left: 27.5%;
-    margin-top: 3%;
-    padding: 1.3%;
-    width: 15%;
-    border: .1em solid rgba(187, 187, 14, 0.801);
-    background-color: white;
-} */
-
-/* .project-cards{
-    display: flex;
-    flex-direction: row;
-} */
-
+#portfolio{
+    background-color: rgba(182, 174, 174, 0.116);
+    -webkit-box-shadow: 0px -6px 14px -2px rgba(79,79,79,0.34); 
+    box-shadow: 0px -6px 14px -2px rgba(79,79,79,0.34);
+}
+#portImg{
+    background-color: var(--main-background-color);
+}
 .card{
     position: relative;
     overflow: hidden;
-    /* margin: 30px; */
-    /* border-radius: 10px; */
-    box-shadow: 10% lightgray;
-    
-    
-}
 
-.card:before{ 
+    box-shadow: 10% lightgray;       
+}
+#cardLink{
+    color: white;
+}
+#portfolioCard:before{ 
     position: absolute;
     content: '';
     width: 100%;
@@ -91,7 +131,7 @@ a.nav-link{
     transition: .5s
 }
 
-.card:hover:before{
+#portfolioCard:hover:before{
     left: 0%;
 
 }
@@ -116,7 +156,12 @@ a.nav-link{
     z-index: 100;
 
 }
+#contact-me{
+    background-color: var(--main-background-color);
+    -webkit-box-shadow: 0px -6px 14px -2px rgba(79,79,79,0.34); 
+    box-shadow: 0px -6px 14px -2px rgba(79,79,79,0.34);
 
+}
 .card:hover .card-text{
     top: 80px;
     
@@ -127,7 +172,31 @@ a.nav-link{
     display: flex;
     flex-direction: column;
 }
-
-.contact-me{
-    padding: 0 25% 0 25%;
+hr{
+    width: 29%;
+    height: 5%;
+    border: .03em solid black;
+    -webkit-box-shadow: 0px 10px 17px 2px rgba(0,0,0,0.45); 
+    box-shadow: 0px 10px 17px 2px rgba(0,0,0,0.36);
+}
+.contactText{
+    height: 2px;
+    border: none;
+}
+.contactMeForm{
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 8px 6px rgba(79,79,79,0.35); 
+    box-shadow: 0px 2px 8px 6px rgba(79,79,79,0.30); 
+    width: 60%;
+    /* border: 1px solid; */
+}
+#footer{
+    -webkit-box-shadow: 0px -10px 14px -10px rgba(79,79,79,0.44); 
+    box-shadow: 0px -10px 14px -10px rgba(79,79,79,0.44);
+}
+#submit{
+    width: fit-content
+}
+.fa-github{
+   color: black;
 }

@@ -1,0 +1,24 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhoward42/firebasedemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lhoward42/firebasedemo/issues"
+  },
+  "homepage": "https://github.com/lhoward42/firebasedemo#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "node-sass": "^5.0.0"
+  }
+}
